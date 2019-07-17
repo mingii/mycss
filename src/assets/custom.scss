@@ -1,0 +1,17 @@
+$enable-shadows: true;
+$enable-gradients: true;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 456px,
+  md: 789px,
+  lg: 999px,
+  xl: 1234px
+);
+
+$theme-colors: (
+  "primary": #a1c2df,
+  "danger": #cca2a0
+);
+
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-vue/src/index.scss";
