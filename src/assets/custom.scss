@@ -13,5 +13,26 @@ $theme-colors: (
   "danger": #cca2a0
 );
 
+$custom1: #900;
+$theme-colors: (
+  "custom1": $custom1
+);
+
+$btn-border-radius: 0.05rem;
+
 @import "~bootstrap/scss/bootstrap";
 @import "~bootstrap-vue/src/index.scss";
+
+@each $color, $value in $theme-colors {
+  .swatch-#{$color} {
+    color: color-yiq($value);
+  }
+}
+// .custom-element {
+//   color: gray("100");
+//   background-color: theme-color("dark");
+// }
+
+.custom-element {
+  color: theme-color-level(custom1, -10);
+}
