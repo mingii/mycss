@@ -30,7 +30,12 @@
 // https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 // https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Flexible_Box_Layout/Flexbox%EC%9D%98_%EA%B8%B0%EB%B3%B8_%EA%B0%9C%EB%85%90
 export default {
-  name: "app"
+  name: "app",
+  created() {
+    console.log("me");
+    console.log(process.env);
+    console.log(process.env.NODE_ENV, process.env.VUE_APP_SECRET);
+  }
 };
 </script>
 
